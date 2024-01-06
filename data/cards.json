@@ -1,0 +1,62 @@
+{
+    "card0": {
+        "name": "Kaju",
+        "rarity": "Legendary",
+        "family": "Robo pengu",
+        "price": 500,
+        "description": "Kaju is an innocent looking killing machine.",
+        "image": "./images/kaju.png",
+        "owner": "admin"
+    },
+
+    "card1": {
+        "name": "Black Pearl",
+        "rarity": "Legendary",
+        "family": "Pirate bay",
+        "price": 500,
+        "description": "The Black Pearl itself. Doesnt look frightening? Wait until you encounter it...",
+        "image": "./images/black_pearl.png",
+        "owner": "admin"
+    },
+
+    "card2": {
+        "name": "Simple hat",
+        "rarity": "Common",
+        "family": "For your head",
+        "price": 50,
+        "description": "Your head wont be cold anymore.",
+        "image": "./images/simple_hat.png",
+        "owner": "admin"
+    },
+
+    "card3": {
+        "name": "Magic hat",
+        "rarity": "Common",
+        "family": "For your head",
+        "price": 50,
+        "description": "It once belonged to Merlin.",
+        "image": "./images/magic_hat.png",
+        "owner": "admin"
+    },
+
+    "card4": {
+        "name": "Adventure hat",
+        "rarity": "Common",
+        "family": "For your head",
+        "price": 50,
+        "description": "You will feel like Indiana Jones with it.",
+        "image": "./images/adventure_hat.png",
+        "owner": "admin"
+    },
+
+    "card5": {
+        "name": "White hat",
+        "rarity": "Common",
+        "family": "For your head",
+        "price": 50,
+        "description": "Slick and clean.",
+        "image": "./images/white_hat.png",
+        "owner": "admin"
+    }
+    
+}
