@@ -11,7 +11,7 @@
 
     "card1": {
         "name": "Black Pearl",
-        "rarity": "Legendary",
+        "rarity": "Epic",
         "family": "Pirate bay",
         "price": 500,
         "description": "The Black Pearl itself. Doesnt look frightening? Wait until you encounter it...",
@@ -21,7 +21,7 @@
 
     "card2": {
         "name": "Simple hat",
-        "rarity": "Common",
+        "rarity": "Rare",
         "family": "For your head",
         "price": 50,
         "description": "Your head wont be cold anymore.",
@@ -31,7 +31,7 @@
 
     "card3": {
         "name": "Magic hat",
-        "rarity": "Common",
+        "rarity": "Uncommon",
         "family": "For your head",
         "price": 50,
         "description": "It once belonged to Merlin.",
