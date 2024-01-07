@@ -63,8 +63,8 @@ $users = json_decode(file_get_contents('./data/users.json'), true);
                 foreach ($cards as $card):
                     if($i > 5) {break;} else {
             ?>
-            <a>
-                <div class="mx-3 max-w-56 rounded overflow-hidden shadow-lg mb-4 card" id="card_button">
+            <a href="card.php?id=<?= $card['id'] ?>">
+                <div class="mx-3 max-w-56 rounded overflow-hidden shadow-lg mb-4 card">
                     <img class="w-full" src="<?= $card['image']?>" alt="<?= $card['name']?>">
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2"><?= $card['name']?></div>

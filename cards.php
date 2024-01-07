@@ -43,7 +43,7 @@ $users = json_decode(file_get_contents('./data/users.json'), true);
                 shuffle($cards);
                 foreach ($cards as $card):
             ?>
-            <a href="#">
+            <a href="card.php?id=<?= $card['id'] ?>">
                 <div class="mx-3 max-w-56 rounded overflow-hidden shadow-lg mb-4 card">
                     <img class="w-full" src="<?= $card['image']?>" alt="<?= $card['name']?>">
                     <div class="px-6 py-4">

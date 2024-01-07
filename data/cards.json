@@ -1,5 +1,6 @@
 {
-    "card0": {
+    "0": {
+        "id": "0",
         "name": "Kaju",
         "rarity": "Legendary",
         "family": "Robo pengu",
@@ -9,7 +10,8 @@
         "owner": "admin"
     },
 
-    "card1": {
+    "1": {
+        "id": "1",
         "name": "Black Pearl",
         "rarity": "Epic",
         "family": "Pirate bay",
@@ -19,7 +21,8 @@
         "owner": "admin"
     },
 
-    "card2": {
+    "2": {
+        "id": "2",
         "name": "Simple hat",
         "rarity": "Rare",
         "family": "For your head",
@@ -29,7 +32,8 @@
         "owner": "admin"
     },
 
-    "card3": {
+    "3": {
+        "id": "3",
         "name": "Magic hat",
         "rarity": "Uncommon",
         "family": "For your head",
@@ -39,7 +43,8 @@
         "owner": "admin"
     },
 
-    "card4": {
+    "4": {
+        "id": "4",
         "name": "Adventure hat",
         "rarity": "Common",
         "family": "For your head",
@@ -49,7 +54,8 @@
         "owner": "admin"
     },
 
-    "card5": {
+    "5": {
+        "id": "5",
         "name": "White hat",
         "rarity": "Common",
         "family": "For your head",
@@ -59,7 +65,8 @@
         "owner": "admin"
     },
 
-    "card6": {
+    "6": {
+        "id": "6",
         "name": "Max FPS",
         "rarity": "Uncommon",
         "family": "Keyboards",
@@ -69,17 +76,19 @@
         "owner": "admin"
     },
 
-    "card7": {
+    "7": {
+        "id": "7",
         "name": "Ragequit",
         "rarity": "Epic",
         "family": "Keyboards",
         "price": 340,
-        "description": "Obviusly that corner was capmed...",
+        "description": "Obviously that corner was camped...",
         "image": "./images/ragequit.png",
         "owner": "admin"
     },
 
-    "card8": {
+    "8": {
+        "id": "8",
         "name": "180 WPM",
         "rarity": "Rare",
         "family": "Keyboards",
@@ -89,7 +98,8 @@
         "owner": "admin"
     },
 
-    "card9": {
+    "9": {
+        "id": "9",
         "name": "Cherry Blossom",
         "rarity": "Rare",
         "family": "Keyboards",
@@ -99,7 +109,8 @@
         "owner": "admin"
     },
 
-    "card10": {
+    "10": {
+        "id": "10",
         "name": "Snow White",
         "rarity": "Common",
         "family": "Keyboards",
@@ -109,13 +120,80 @@
         "owner": "admin"
     },
 
-    "card11": {
+    "11": {
+        "id": "11",
         "name": "Office",
         "rarity": "Uncommon",
         "family": "Keyboards",
         "price": 90,
         "description": "Serves you perfectly when using Microsoft Excel.",
         "image": "./images/office.png",
+        "owner": "admin"
+    },
+
+    "12": {
+        "id": "12",
+        "name": "Ferrari",
+        "rarity": "Legendary",
+        "family": "Lego Cars",
+        "price": 470,
+        "description": "Do I have to explain?",
+        "image": "./images/ferrari.png",
+        "owner": "admin"
+    },
+
+    "13": {
+        "id": "13",
+        "name": "Lambo",
+        "rarity": "Epic",
+        "family": "Lego Cars",
+        "price": 360,
+        "description": "The power of a bull.",
+        "image": "./images/lambo.png",
+        "owner": "admin"
+    },
+
+    "14": {
+        "id": "14",
+        "name": "McLaren",
+        "rarity": "Rare",
+        "family": "Lego Cars",
+        "price": 300,
+        "description": "Perfect for a night drive.",
+        "image": "./images/mclaren.png",
+        "owner": "admin"
+    },
+
+    "15": {
+        "id": "15",
+        "name": "Volkswagen",
+        "rarity": "Uncommon",
+        "family": "Lego Cars",
+        "price": 120,
+        "description": "Takes to you to places.",
+        "image": "./images/volkswagen.png",
+        "owner": "admin"
+    },
+
+    "16": {
+        "id": "16",
+        "name": "Oldschool",
+        "rarity": "Uncommon",
+        "family": "Lego Cars",
+        "price": 130,
+        "description": "Old elegance.",
+        "image": "./images/oldschool.png",
+        "owner": "admin"
+    },
+
+    "17": {
+        "id": "17",
+        "name": "Toyota",
+        "rarity": "Common",
+        "family": "Lego Cars",
+        "price": 50,
+        "description": "Japanese quality. Just too common.",
+        "image": "./images/toyota.png",
         "owner": "admin"
     }
     
