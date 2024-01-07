@@ -13,7 +13,7 @@
         "name": "Black Pearl",
         "rarity": "Epic",
         "family": "Pirate bay",
-        "price": 500,
+        "price": 450,
         "description": "The Black Pearl itself. Doesnt look frightening? Wait until you encounter it...",
         "image": "./images/black_pearl.png",
         "owner": "admin"
@@ -23,7 +23,7 @@
         "name": "Simple hat",
         "rarity": "Rare",
         "family": "For your head",
-        "price": 50,
+        "price": 240,
         "description": "Your head wont be cold anymore.",
         "image": "./images/simple_hat.png",
         "owner": "admin"
@@ -33,7 +33,7 @@
         "name": "Magic hat",
         "rarity": "Uncommon",
         "family": "For your head",
-        "price": 50,
+        "price": 105,
         "description": "It once belonged to Merlin.",
         "image": "./images/magic_hat.png",
         "owner": "admin"
@@ -43,7 +43,7 @@
         "name": "Adventure hat",
         "rarity": "Common",
         "family": "For your head",
-        "price": 50,
+        "price": 20,
         "description": "You will feel like Indiana Jones with it.",
         "image": "./images/adventure_hat.png",
         "owner": "admin"
@@ -56,6 +56,66 @@
         "price": 50,
         "description": "Slick and clean.",
         "image": "./images/white_hat.png",
+        "owner": "admin"
+    },
+
+    "card6": {
+        "name": "Max FPS",
+        "rarity": "Uncommon",
+        "family": "Keyboards",
+        "price": 100,
+        "description": "We all know the more RGB you have the more FPS your game will be.",
+        "image": "./images/max_fps.png",
+        "owner": "admin"
+    },
+
+    "card7": {
+        "name": "Ragequit",
+        "rarity": "Epic",
+        "family": "Keyboards",
+        "price": 340,
+        "description": "Obviusly that corner was capmed...",
+        "image": "./images/ragequit.png",
+        "owner": "admin"
+    },
+
+    "card8": {
+        "name": "180 WPM",
+        "rarity": "Rare",
+        "family": "Keyboards",
+        "price": 220,
+        "description": "Allows you to reach inhuman typing speed.",
+        "image": "./images/180wps.png",
+        "owner": "admin"
+    },
+
+    "card9": {
+        "name": "Cherry Blossom",
+        "rarity": "Rare",
+        "family": "Keyboards",
+        "price": 240,
+        "description": "Makes you feel like youre in Japan.",
+        "image": "./images/cherryblossom.png",
+        "owner": "admin"
+    },
+
+    "card10": {
+        "name": "Snow White",
+        "rarity": "Common",
+        "family": "Keyboards",
+        "price": 70,
+        "description": "Too plain",
+        "image": "./images/snowwhite.png",
+        "owner": "admin"
+    },
+
+    "card11": {
+        "name": "Office",
+        "rarity": "Uncommon",
+        "family": "Keyboards",
+        "price": 90,
+        "description": "Serves you perfectly when using Microsoft Excel.",
+        "image": "./images/office.png",
         "owner": "admin"
     }
     
