@@ -52,7 +52,7 @@ if ($cards[$id]["rarity"] == "Legendary") {
                 <a href="cards.php" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
             </div>
             <div class="lg:flex lg:flex-1 lg:justify-end">
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+                <a href="login.php" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
             </div>
             </nav>
         </header>
@@ -62,46 +62,37 @@ if ($cards[$id]["rarity"] == "Legendary") {
             <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Is this the one for you?</h2>
         </div>
         <div class="px-8 flex flex-wrap -mb-4 justify-center">
-                    <img class="w-1/4 rounded-2xl border-4 border-<?= $color ?>-400" src="<?= $cards[$id]['image']?>" alt="<?= $cards[$id]['name']?>">
-                    <div>
-                        <div class="px-6 py-4">
-                            <div class="font-bold text-4xl mb-2"><?= $cards[$id]['name']?></div>
-                            <div class="font-bold text-2xl mb-4">Price: <?= $cards[$id]['price']?></div>
-                            <p class="text-gray-700 text-base">
-                                <?= $cards[$id]['description']?>
-                            </p>
-                        </div>
-                        <div class="px-6 pt-4 pb-2">
-                            <?php if($cards[$id]["rarity"] == "Legendary"):
-                            ?>
-                                <span class="inline-block bg-yellow-200 rounded-full px-3 py-1 text-sm font-semibold text-yellow-700 mr-2 mb-2"><?= $cards[$id]['rarity']?></span>
-                            <?php elseif($cards[$id]["rarity"] == "Epic"):
-                            ?>
-                                <span class="inline-block bg-purple-200 rounded-full px-3 py-1 text-sm font-semibold text-purple-700 mr-2 mb-2"><?= $cards[$id]['rarity']?></span>
-                            <?php elseif($cards[$id]["rarity"] == "Rare"):
-                            ?>
-                                <span class="inline-block bg-blue-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700 mr-2 mb-2"><?= $cards[$id]['rarity']?></span>
-                            <?php elseif($cards[$id]["rarity"] == "Uncommon"):
-                            ?>
-                                <span class="inline-block bg-emerald-200 rounded-full px-3 py-1 text-sm font-semibold text-emerald-700 mr-2 mb-2"><?= $cards[$id]['rarity']?></span>
-                            <?php elseif($cards[$id]["rarity"] == "Common"):
-                            ?>
-                                <span class="inline-block bg-lime-200 rounded-full px-3 py-1 text-sm font-semibold text-lime-700 mr-2 mb-2"><?= $cards[$id]['rarity']?></span>
-                            <?php endif; ?>
-                            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><?= $cards[$id]['family']?></span>                
-                        </div>
-                    </div>
+            <img class="w-1/4 rounded-2xl border-4 border-<?= $color ?>-400" src="<?= $cards[$id]['image']?>" alt="<?= $cards[$id]['name']?>">
+            <div>
+                <div class="px-6 py-4">
+                    <div class="font-bold text-4xl mb-2"><?= $cards[$id]['name']?></div>
+                    <div class="font-bold text-2xl mb-4">Price: <?= $cards[$id]['price']?></div>
+                    <p class="text-gray-700 text-base">
+                        <?= $cards[$id]['description']?>
+                    </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                    <?php if($cards[$id]["rarity"] == "Legendary"):
+                    ?>
+                        <span class="inline-block bg-yellow-200 rounded-full px-3 py-1 text-sm font-semibold text-yellow-700 mr-2 mb-2"><?= $cards[$id]['rarity']?></span>
+                    <?php elseif($cards[$id]["rarity"] == "Epic"):
+                    ?>
+                        <span class="inline-block bg-purple-200 rounded-full px-3 py-1 text-sm font-semibold text-purple-700 mr-2 mb-2"><?= $cards[$id]['rarity']?></span>
+                    <?php elseif($cards[$id]["rarity"] == "Rare"):
+                    ?>
+                        <span class="inline-block bg-blue-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700 mr-2 mb-2"><?= $cards[$id]['rarity']?></span>
+                    <?php elseif($cards[$id]["rarity"] == "Uncommon"):
+                    ?>
+                        <span class="inline-block bg-emerald-200 rounded-full px-3 py-1 text-sm font-semibold text-emerald-700 mr-2 mb-2"><?= $cards[$id]['rarity']?></span>
+                    <?php elseif($cards[$id]["rarity"] == "Common"):
+                    ?>
+                        <span class="inline-block bg-lime-200 rounded-full px-3 py-1 text-sm font-semibold text-lime-700 mr-2 mb-2"><?= $cards[$id]['rarity']?></span>
+                    <?php endif; ?>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><?= $cards[$id]['family']?></span>                
+                </div>
+            </div>
         </div>
-
-
-
-         
-
-        
-
     </div>
-    <script>
 
-    </script>
 </body>
 </html>

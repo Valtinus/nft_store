@@ -29,7 +29,7 @@ $users = json_decode(file_get_contents('./data/users.json'), true);
                 <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
             </div>
             <div class="lg:flex lg:flex-1 lg:justify-end">
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+                <a href="login.php" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
             </div>
             </nav>
         </header>

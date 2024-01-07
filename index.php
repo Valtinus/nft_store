@@ -29,7 +29,7 @@ $users = json_decode(file_get_contents('./data/users.json'), true);
                 <a href="cards.php" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
             </div>
             <div class="lg:flex lg:flex-1 lg:justify-end">
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+                <a href="login.php" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
             </div>
             </nav>
         </header>
@@ -44,7 +44,7 @@ $users = json_decode(file_get_contents('./data/users.json'), true);
                 <h1 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">Buy and trade NFT-s with <span class="font-extrabold">zero effort</span></h1>
                 <p class="mt-6 text-lg leading-8 text-gray-600">INFIMUM is the safest and simplest platform for you to start your NFT journey. Are you ready?</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Start trading</a>
+                <a href="login.php" class="rounded-md bg-violet-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Start trading</a>
                 <a href="cards.php" class="text-sm font-semibold leading-6 text-gray-900">View NFT-s</a>
                 </div>
             </div>
