@@ -1,6 +1,15 @@
 <?php
+session_start();
 $cards = json_decode(file_get_contents('./data/cards.json'), true);
 $users = json_decode(file_get_contents('./data/users.json'), true);
+
+$m = "0";
+if($_SESSION['money'] >= 10000){
+    $n = round($_SESSION['money'] / 1000, 1);
+    $m = "{$n}K";
+} else {
+    $m = $_SESSION['money'];
+}
 
 ?>
 
@@ -29,7 +38,15 @@ $users = json_decode(file_get_contents('./data/users.json'), true);
                 <a href="cards.php" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
             </div>
             <div class="lg:flex lg:flex-1 lg:justify-end">
-                <a href="login.php" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+                <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']): ?>
+                    <a href="user.php?username=<?= $_SESSION['username'] ?>" class="text-sm font-semibold leading-6 text-gray-900 mr-4">
+                        <?= htmlspecialchars($_SESSION['username']) ?> - 
+                        <?= $m ?> 💰
+                    </a>
+                    <a href="logout.php" class="text-sm font-semibold leading-6 text-violet-500">Log out</a>
+                <?php else: ?>
+                    <a href="login.php" class="text-sm font-semibold leading-6 text-violet-500">Log in</a>
+                <?php endif; ?>
             </div>
             </nav>
         </header>

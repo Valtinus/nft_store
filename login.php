@@ -1,5 +1,5 @@
-
 <?php
+session_start();
 $cards = json_decode(file_get_contents('./data/cards.json'), true);
 $users = json_decode(file_get_contents('./data/users.json'), true);
 
@@ -18,6 +18,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if ($userFound) {
+        $_SESSION['loggedin'] = true;
+        $_SESSION['username'] = $username;
+        $_SESSION['money'] = $users[$username]['money'];
+
         header('Location: index.php');
         exit;
     } else {

@@ -1,8 +1,15 @@
 {
+    "admin": {
+        "username": "admin",
+        "email": "admin@admin.com",
+        "password": "$2y$10$H59CudnyPwJTFYIa244MaO0tb.IzuNaJwZR9VQefWiVdMmbvVzJc.",
+        "money": 10499,
+        "ownednfts": []
+    },
     "asd": {
         "username": "asd",
         "email": "asd@asd.com",
-        "password": "$2y$10$3IJ.rBEPSwfW6i66hluDJeG8hLpU.c856v6kvywDnY107HIHANnfa",
+        "password": "$2y$10$NoghnEM23FRkXn8cirCuMOh09fLWozsEOWmi6rcedYMxr0H\/4sGZm",
         "money": 1000,
         "ownednfts": []
     }

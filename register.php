@@ -1,5 +1,5 @@
-
 <?php
+session_start();
 $cards = json_decode(file_get_contents('./data/cards.json'), true);
 $users = json_decode(file_get_contents('./data/users.json'), true);
 
