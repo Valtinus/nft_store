@@ -21,7 +21,7 @@ $users = json_decode(file_get_contents('./data/users.json'), true);
             <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
                 <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
+                <span class="sr-only">INFIMUM NFT</span>
                 <img class="h-8 w-auto" src="./images/logo.png" alt="">
                 </a>
             </div>
