@@ -13,14 +13,17 @@ if (isset($_GET['username']) && isset($users[$_GET['username']])) {
 
 
 $m = "0";
+$full = 0;
 foreach($users as $user) {
     if($user['username'] == $_SESSION['username']) {
         if($user['money'] >= 10000) {
             $n = round($user['money'] / 1000, 1);
+            $m = "{$n}K";
+            $full = $user['money'];
         } else {
+            $full = $user['money'];
             $m = $user['money'];
         }
-        
     }
 }
 
@@ -74,7 +77,7 @@ foreach($users as $user) {
         </div>
         <div class="px-8 flex-col flex-wrap -mb-4 text-center">
             <p class="text-xl font-semibold tracking-tight text-gray-900 sm:text-xl">Username: <?= htmlspecialchars($_SESSION['username']) ?></p>
-            <p class="text-xl font-semibold tracking-tight text-gray-900 sm:text-xl">Balance: <?= $_SESSION['money'] ?> 💰</p>
+            <p class="text-xl font-semibold tracking-tight text-gray-900 sm:text-xl">Balance: <?= $full ?> 💰</p>
             <p class="text-xl font-semibold tracking-tight text-gray-900 sm:text-xl">Email: <?= htmlspecialchars($_SESSION['email']) ?></p>
             <p class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-3xl pt-20 pb-5">Your NFT-s:
                 <div class="px-8 flex flex-wrap -mb-4 justify-center">

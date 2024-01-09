@@ -26,14 +26,17 @@ if ($cards[$id]["rarity"] == "Legendary") {
 }
 
 $m = "0";
+$full = 0;
 foreach($users as $user) {
     if($user['username'] == $_SESSION['username']) {
         if($user['money'] >= 10000) {
             $n = round($user['money'] / 1000, 1);
+            $m = "{$n}K";
+            $full = $user['money'];
         } else {
+            $full = $user['money'];
             $m = $user['money'];
         }
-        
     }
 }
 
