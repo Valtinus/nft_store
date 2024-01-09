@@ -195,6 +195,116 @@
         "description": "Japanese quality. Just too common.",
         "image": "./images/toyota.png",
         "owner": "admin"
+    },
+
+    "18": {
+        "id": "18",
+        "name": "Gira",
+        "rarity": "Common",
+        "family": "Gira",
+        "price": 50,
+        "description": "Just a casual giraffe.",
+        "image": "./images/gira.png",
+        "owner": "asd"
+    },
+
+    "19": {
+        "id": "19",
+        "name": "Cooler Gira",
+        "rarity": "Common",
+        "family": "Gira",
+        "price": 60,
+        "description": "Gira became cooler with sunglasses.",
+        "image": "./images/cooler_gira.png",
+        "owner": "admin"
+    },
+
+    "20": {
+        "id": "20",
+        "name": "Even Cooler Gira",
+        "rarity": "Uncommon",
+        "family": "Gira",
+        "price": 110,
+        "description": "He is becoming the coolest giraffe ever.",
+        "image": "./images/even_cooler_gira.png",
+        "owner": "admin"
+    },
+
+    "21": {
+        "id": "21",
+        "name": "The Coolest Gira",
+        "rarity": "Rare",
+        "family": "Gira",
+        "price": 160,
+        "description": "Can he be even more cooler? I don't think so...",
+        "image": "./images/the_coolest_gira.png",
+        "owner": "admin"
+    },
+
+    "22": {
+        "id": "22",
+        "name": "Selfie Gira",
+        "rarity": "Rare",
+        "family": "Gira",
+        "price": 230,
+        "description": "HE'S ON INSTAGRAM NOW!",
+        "image": "./images/selfie_gira.png",
+        "owner": "admin"
+    },
+
+    "23": {
+        "id": "23",
+        "name": "Colorful Summer",
+        "rarity": "Uncommon",
+        "family": "Flowers of the seasons",
+        "price": 90,
+        "description": "Happy, colorful and warm but boring.",
+        "image": "./images/colorful_summer.png",
+        "owner": "admin"
+    },
+
+    "24": {
+        "id": "24",
+        "name": "Dry Winter",
+        "rarity": "Epic",
+        "family": "Flowers of the seasons",
+        "price": 340,
+        "description": "Breaks through even the coldest winters.",
+        "image": "./images/dry_winter.png",
+        "owner": "admin"
+    },
+
+    "25": {
+        "id": "25",
+        "name": "Fall of roses",
+        "rarity": "Rare",
+        "family": "Flowers of the seasons",
+        "price": 190,
+        "description": "Who doesn't like red roses?",
+        "image": "./images/fall_of_roses.png",
+        "owner": "admin"
+    },
+
+    "26": {
+        "id": "26",
+        "name": "Rising spring",
+        "rarity": "Uncommon",
+        "family": "Flowers of the seasons",
+        "price": 120,
+        "description": "The first color in spring.",
+        "image": "./images/rising_spring.png",
+        "owner": "admin"
+    },
+
+    "27": {
+        "id": "27",
+        "name": "Winter hope",
+        "rarity": "Rare",
+        "family": "Flowers of the seasons",
+        "price": 200,
+        "description": "Some hope in a cold winter.",
+        "image": "./images/winter_hope.png",
+        "owner": "asd"
     }
     
 }

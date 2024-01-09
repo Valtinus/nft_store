@@ -68,9 +68,50 @@ if($_SESSION['money'] >= 10000){
         <div class="text-center pb-14 px-6 pt-36 lg:px-8">
             <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">User information</h2>
         </div>
-        <div class="px-8 flex flex-wrap -mb-4 justify-center">
-            <?= htmlspecialchars($_SESSION['username']) ?>
-            <?= $m ?> 💰
+        <div class="px-8 flex-col flex-wrap -mb-4 text-center">
+            <p class="text-xl font-semibold tracking-tight text-gray-900 sm:text-xl">Username: <?= htmlspecialchars($_SESSION['username']) ?></p>
+            <p class="text-xl font-semibold tracking-tight text-gray-900 sm:text-xl">Balance: <?= $_SESSION['money'] ?> 💰</p>
+            <p class="text-xl font-semibold tracking-tight text-gray-900 sm:text-xl">Email: <?= htmlspecialchars($_SESSION['email']) ?></p>
+            <p class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-3xl pt-20 pb-5">Your cards:
+                <div class="px-8 flex flex-wrap -mb-4 justify-center">
+                    <?php 
+                        foreach ($cards as $card):
+                            if($card['owner'] == $_SESSION['username']){
+                    ?>
+                    <a href="card.php?id=<?= $card['id'] ?>">
+                        <div class="mx-3 max-w-56 rounded overflow-hidden shadow-lg mb-4 card">
+                            <img class="w-full" src="<?= $card['image']?>" alt="<?= $card['name']?>">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2"><?= $card['name']?></div>
+                                <div class="font-bold text-l mb-4">Price: <?= $card['price']?></div>
+                                <p class="text-gray-700 text-base">
+                                    <?= $card['description']?>
+                                </p>
+                            </div>
+                            <div class="px-6 pt-4 pb-2">
+                                <?php if($card["rarity"] == "Legendary"):
+                                ?>
+                                    <span class="inline-block bg-yellow-200 rounded-full px-3 py-1 text-sm font-semibold text-yellow-700 mr-2 mb-2"><?= $card['rarity']?></span>
+                                <?php elseif($card["rarity"] == "Epic"):
+                                ?>
+                                    <span class="inline-block bg-purple-200 rounded-full px-3 py-1 text-sm font-semibold text-purple-700 mr-2 mb-2"><?= $card['rarity']?></span>
+                                <?php elseif($card["rarity"] == "Rare"):
+                                ?>
+                                    <span class="inline-block bg-blue-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700 mr-2 mb-2"><?= $card['rarity']?></span>
+                                <?php elseif($card["rarity"] == "Uncommon"):
+                                ?>
+                                    <span class="inline-block bg-emerald-200 rounded-full px-3 py-1 text-sm font-semibold text-emerald-700 mr-2 mb-2"><?= $card['rarity']?></span>
+                                <?php elseif($card["rarity"] == "Common"):
+                                ?>
+                                    <span class="inline-block bg-lime-200 rounded-full px-3 py-1 text-sm font-semibold text-lime-700 mr-2 mb-2"><?= $card['rarity']?></span>
+                                <?php endif; ?>
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><?= $card['family']?></span>                
+                            </div>
+                        </div>
+                    </a>
+                    <?php $i++; } endforeach; ?>
+                </div>
+            </p>
         </div>
     </div>
 

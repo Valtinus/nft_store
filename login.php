@@ -21,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
         $_SESSION['money'] = $users[$username]['money'];
+        $_SESSION['email'] = $users[$username]['email'];
         $_SESSION['isAdmin'] = $users[$username]['isAdmin'];
 
         header('Location: index.php');
@@ -85,8 +86,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </p>
             </div>
             </div>
-  
-
     </div>
 </body>
 </html>

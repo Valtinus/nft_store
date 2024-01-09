@@ -116,16 +116,6 @@ if($_SESSION['money'] >= 10000){
             </a>
             <?php $i++; } endforeach; ?>
         </div>
-
-
-
-         
-
-        
-
     </div>
-    <script>
-
-    </script>
 </body>
 </html>
