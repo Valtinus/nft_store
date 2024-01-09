@@ -1,310 +1,292 @@
 {
-    "0": {
+    "Kaju": {
         "id": "0",
         "name": "Kaju",
         "rarity": "Legendary",
         "family": "Robo pengu",
         "price": 500,
         "description": "Kaju is an innocent looking killing machine.",
-        "image": "./images/kaju.png",
+        "image": ".\/images\/kaju.png",
         "owner": "admin"
     },
-
-    "1": {
+    "Black Pearl": {
         "id": "1",
         "name": "Black Pearl",
         "rarity": "Epic",
         "family": "Pirate bay",
         "price": 450,
         "description": "The Black Pearl itself. Doesnt look frightening? Wait until you encounter it...",
-        "image": "./images/black_pearl.png",
+        "image": ".\/images\/black_pearl.png",
         "owner": "admin"
     },
-
-    "2": {
+    "Simple hat": {
         "id": "2",
         "name": "Simple hat",
         "rarity": "Rare",
         "family": "For your head",
         "price": 240,
         "description": "Your head wont be cold anymore.",
-        "image": "./images/simple_hat.png",
+        "image": ".\/images\/simple_hat.png",
         "owner": "admin"
     },
-
-    "3": {
+    "Magic hat": {
         "id": "3",
         "name": "Magic hat",
         "rarity": "Uncommon",
         "family": "For your head",
         "price": 105,
         "description": "It once belonged to Merlin.",
-        "image": "./images/magic_hat.png",
+        "image": ".\/images\/magic_hat.png",
         "owner": "admin"
     },
-
-    "4": {
+    "Adventure hat": {
         "id": "4",
         "name": "Adventure hat",
         "rarity": "Common",
         "family": "For your head",
         "price": 20,
         "description": "You will feel like Indiana Jones with it.",
-        "image": "./images/adventure_hat.png",
+        "image": ".\/images\/adventure_hat.png",
         "owner": "admin"
     },
-
-    "5": {
+    "White hat": {
         "id": "5",
         "name": "White hat",
         "rarity": "Common",
         "family": "For your head",
         "price": 50,
         "description": "Slick and clean.",
-        "image": "./images/white_hat.png",
+        "image": ".\/images\/white_hat.png",
         "owner": "admin"
     },
-
-    "6": {
+    "Max FPS": {
         "id": "6",
         "name": "Max FPS",
         "rarity": "Uncommon",
         "family": "Keyboards",
         "price": 100,
         "description": "We all know the more RGB you have the more FPS your game will be.",
-        "image": "./images/max_fps.png",
+        "image": ".\/images\/max_fps.png",
         "owner": "admin"
     },
-
-    "7": {
+    "Ragequit": {
         "id": "7",
         "name": "Ragequit",
         "rarity": "Epic",
         "family": "Keyboards",
         "price": 340,
         "description": "Obviously that corner was camped...",
-        "image": "./images/ragequit.png",
+        "image": ".\/images\/ragequit.png",
         "owner": "admin"
     },
-
-    "8": {
+    "180 WPM": {
         "id": "8",
         "name": "180 WPM",
         "rarity": "Rare",
         "family": "Keyboards",
         "price": 220,
         "description": "Allows you to reach inhuman typing speed.",
-        "image": "./images/180wps.png",
+        "image": ".\/images\/180wps.png",
         "owner": "admin"
     },
-
-    "9": {
+    "Cherry Blossom": {
         "id": "9",
         "name": "Cherry Blossom",
         "rarity": "Rare",
         "family": "Keyboards",
         "price": 240,
         "description": "Makes you feel like youre in Japan.",
-        "image": "./images/cherryblossom.png",
+        "image": ".\/images\/cherryblossom.png",
         "owner": "admin"
     },
-
-    "10": {
+    "Snow White": {
         "id": "10",
         "name": "Snow White",
         "rarity": "Common",
         "family": "Keyboards",
         "price": 70,
         "description": "Too plain",
-        "image": "./images/snowwhite.png",
+        "image": ".\/images\/snowwhite.png",
         "owner": "admin"
     },
-
-    "11": {
+    "Office": {
         "id": "11",
         "name": "Office",
         "rarity": "Uncommon",
         "family": "Keyboards",
         "price": 90,
         "description": "Serves you perfectly when using Microsoft Excel.",
-        "image": "./images/office.png",
+        "image": ".\/images\/office.png",
         "owner": "admin"
     },
-
-    "12": {
+    "Ferrari": {
         "id": "12",
         "name": "Ferrari",
         "rarity": "Legendary",
         "family": "Lego Cars",
         "price": 470,
         "description": "Do I have to explain?",
-        "image": "./images/ferrari.png",
+        "image": ".\/images\/ferrari.png",
         "owner": "admin"
     },
-
-    "13": {
+    "Lambo": {
         "id": "13",
         "name": "Lambo",
         "rarity": "Epic",
         "family": "Lego Cars",
         "price": 360,
         "description": "The power of a bull.",
-        "image": "./images/lambo.png",
+        "image": ".\/images\/lambo.png",
         "owner": "admin"
     },
-
-    "14": {
+    "McLaren": {
         "id": "14",
         "name": "McLaren",
         "rarity": "Rare",
         "family": "Lego Cars",
         "price": 300,
         "description": "Perfect for a night drive.",
-        "image": "./images/mclaren.png",
+        "image": ".\/images\/mclaren.png",
         "owner": "admin"
     },
-
-    "15": {
+    "Volkswagen": {
         "id": "15",
         "name": "Volkswagen",
         "rarity": "Uncommon",
         "family": "Lego Cars",
         "price": 120,
         "description": "Takes to you to places.",
-        "image": "./images/volkswagen.png",
+        "image": ".\/images\/volkswagen.png",
         "owner": "admin"
     },
-
-    "16": {
+    "Oldschool": {
         "id": "16",
         "name": "Oldschool",
         "rarity": "Uncommon",
         "family": "Lego Cars",
         "price": 130,
         "description": "Old elegance.",
-        "image": "./images/oldschool.png",
+        "image": ".\/images\/oldschool.png",
         "owner": "admin"
     },
-
-    "17": {
+    "Toyota": {
         "id": "17",
         "name": "Toyota",
         "rarity": "Common",
         "family": "Lego Cars",
         "price": 50,
         "description": "Japanese quality. Just too common.",
-        "image": "./images/toyota.png",
+        "image": ".\/images\/toyota.png",
         "owner": "admin"
     },
-
-    "18": {
+    "Gira": {
         "id": "18",
         "name": "Gira",
         "rarity": "Common",
         "family": "Gira",
         "price": 50,
         "description": "Just a casual giraffe.",
-        "image": "./images/gira.png",
+        "image": ".\/images\/gira.png",
         "owner": "asd"
     },
-
-    "19": {
+    "Cooler Gira": {
         "id": "19",
         "name": "Cooler Gira",
         "rarity": "Common",
         "family": "Gira",
         "price": 60,
         "description": "Gira became cooler with sunglasses.",
-        "image": "./images/cooler_gira.png",
+        "image": ".\/images\/cooler_gira.png",
         "owner": "admin"
     },
-
-    "20": {
+    "Even Cooler Gira": {
         "id": "20",
         "name": "Even Cooler Gira",
         "rarity": "Uncommon",
         "family": "Gira",
         "price": 110,
         "description": "He is becoming the coolest giraffe ever.",
-        "image": "./images/even_cooler_gira.png",
+        "image": ".\/images\/even_cooler_gira.png",
         "owner": "admin"
     },
-
-    "21": {
+    "The Coolest Gira": {
         "id": "21",
         "name": "The Coolest Gira",
         "rarity": "Rare",
         "family": "Gira",
         "price": 160,
         "description": "Can he be even more cooler? I don't think so...",
-        "image": "./images/the_coolest_gira.png",
+        "image": ".\/images\/the_coolest_gira.png",
         "owner": "admin"
     },
-
-    "22": {
+    "Selfie Gira": {
         "id": "22",
         "name": "Selfie Gira",
         "rarity": "Rare",
         "family": "Gira",
         "price": 230,
         "description": "HE'S ON INSTAGRAM NOW!",
-        "image": "./images/selfie_gira.png",
+        "image": ".\/images\/selfie_gira.png",
         "owner": "admin"
     },
-
-    "23": {
+    "Colorful Summer": {
         "id": "23",
         "name": "Colorful Summer",
         "rarity": "Uncommon",
         "family": "Flowers of the seasons",
         "price": 90,
         "description": "Happy, colorful and warm but boring.",
-        "image": "./images/colorful_summer.png",
+        "image": ".\/images\/colorful_summer.png",
         "owner": "admin"
     },
-
-    "24": {
+    "Dry Winter": {
         "id": "24",
         "name": "Dry Winter",
         "rarity": "Epic",
         "family": "Flowers of the seasons",
         "price": 340,
         "description": "Breaks through even the coldest winters.",
-        "image": "./images/dry_winter.png",
+        "image": ".\/images\/dry_winter.png",
         "owner": "admin"
     },
-
-    "25": {
+    "Fall of roses": {
         "id": "25",
         "name": "Fall of roses",
         "rarity": "Rare",
         "family": "Flowers of the seasons",
         "price": 190,
         "description": "Who doesn't like red roses?",
-        "image": "./images/fall_of_roses.png",
+        "image": ".\/images\/fall_of_roses.png",
         "owner": "admin"
     },
-
-    "26": {
+    "Rising spring": {
         "id": "26",
         "name": "Rising spring",
         "rarity": "Uncommon",
         "family": "Flowers of the seasons",
         "price": 120,
         "description": "The first color in spring.",
-        "image": "./images/rising_spring.png",
+        "image": ".\/images\/rising_spring.png",
         "owner": "admin"
     },
-
-    "27": {
+    "Winter hope": {
         "id": "27",
         "name": "Winter hope",
         "rarity": "Rare",
         "family": "Flowers of the seasons",
         "price": 200,
         "description": "Some hope in a cold winter.",
-        "image": "./images/winter_hope.png",
-        "owner": "asd"
+        "image": ".\/images\/winter_hope.png",
+        "owner": "admin"
+    },
+    "Mamma Mia": {
+        "id": "28",
+        "name": "Mamma Mia",
+        "rarity": "Epic",
+        "family": "Italy",
+        "price": "320",
+        "description": "The best pizza you'll ever have.",
+        "image": ".\/images\/mamma_mia.png",
+        "owner": "admin"
     }
-    
 }
