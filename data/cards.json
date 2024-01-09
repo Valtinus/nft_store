@@ -27,7 +27,7 @@
         "price": 240,
         "description": "Your head wont be cold anymore.",
         "image": ".\/images\/simple_hat.png",
-        "owner": "admin"
+        "owner": "aaa"
     },
     "Magic hat": {
         "id": "3",
@@ -37,7 +37,7 @@
         "price": 105,
         "description": "It once belonged to Merlin.",
         "image": ".\/images\/magic_hat.png",
-        "owner": "admin"
+        "owner": "Bab"
     },
     "Adventure hat": {
         "id": "4",
@@ -47,7 +47,7 @@
         "price": 20,
         "description": "You will feel like Indiana Jones with it.",
         "image": ".\/images\/adventure_hat.png",
-        "owner": "admin"
+        "owner": "aaa"
     },
     "White hat": {
         "id": "5",
@@ -67,7 +67,7 @@
         "price": 100,
         "description": "We all know the more RGB you have the more FPS your game will be.",
         "image": ".\/images\/max_fps.png",
-        "owner": "admin"
+        "owner": "aaa"
     },
     "Ragequit": {
         "id": "7",
@@ -107,7 +107,7 @@
         "price": 70,
         "description": "Too plain",
         "image": ".\/images\/snowwhite.png",
-        "owner": "admin"
+        "owner": "aaa"
     },
     "Office": {
         "id": "11",
@@ -247,7 +247,7 @@
         "price": 340,
         "description": "Breaks through even the coldest winters.",
         "image": ".\/images\/dry_winter.png",
-        "owner": "admin"
+        "owner": "aaa"
     },
     "Fall of roses": {
         "id": "25",
@@ -297,6 +297,16 @@
         "price": "250",
         "description": "This plate of pasta changes your life.",
         "image": ".\/images\/pasta.png",
+        "owner": "admin"
+    },
+    "Tiramisu": {
+        "id": "30",
+        "name": "Tiramisu",
+        "rarity": "Legendary",
+        "family": "Italy",
+        "price": "700",
+        "description": "Italian perfection.",
+        "image": ".\/images\/tiramisu.png",
         "owner": "admin"
     }
 }

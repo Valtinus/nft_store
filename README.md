@@ -30,13 +30,13 @@ ELTE Hallgatói Követelményrendszer, IK kari különös rész, 377/A. §: "Az 
 [x] `1.0 pont` Főoldal: Lehessen a kártyákat típus szerint szűrni.
 [x] `0.5 pont` Felhasználó részletek: Megjelenik a felhasználó neve, e-mail címe, pénze
 [x] `0.5 pont` Felhasználó részletek: Megjelennek a felhasználóhoz tartozó kártyák
-[ ] `2.0 pont` Felhasználó részletek: A felhasználó kártyái mellett megjelenik egy eladás gomb, amivel a felhasználó el tudja adni az adott kártyát, ekkor törlődik a kártyái közül az eladott lap és megkapja a kártya árának 90%-át. Az eladott lap visszakerül az ADMIN paklijába. (Azt hogy az eladás gombot hova helyezed és hogyan valósítod meg rád van bízva)
+[x] `2.0 pont` Felhasználó részletek: A felhasználó kártyái mellett megjelenik egy eladás gomb, amivel a felhasználó el tudja adni az adott kártyát, ekkor törlődik a kártyái közül az eladott lap és megkapja a kártya árának 90%-át. Az eladott lap visszakerül az ADMIN paklijába. (Azt hogy az eladás gombot hova helyezed és hogyan valósítod meg rád van bízva)
 [x] `0.5 pont` Admin: Be lehet jelentkezni az admin felhasználó adataival
 [x] `0.5 pont` Admin: Új kártya létrehozása csak Admin felhasználóval érhető el
 [x] `0.5 pont` Főoldal: Ha be van jelentkezve jelenjen meg egy vásárlás gomb minden kártya alatt
-[ ] `1.5 pont` Főoldal (Vásárlás): Meg tudja venni a kártyát
-[ ] `0.5 pont` Főoldal (Vásárlás): Csak annyit tud venni amennyi pénze van
-[ ] `0.5 pont` Főoldal (Vásárlás): Legfeljebb 5 kártyája lehet
+[x] `1.5 pont` Főoldal (Vásárlás): Meg tudja venni a kártyát
+[x] `0.5 pont` Főoldal (Vásárlás): Csak annyit tud venni amennyi pénze van
+[x] `0.5 pont` Főoldal (Vásárlás): Legfeljebb 5 kártyája lehet
 [x] `1.0 pont` Igényes kialakítás
 
 ### Plusz feladatok (max plusz 5 pont)

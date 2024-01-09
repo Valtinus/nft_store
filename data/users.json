@@ -10,7 +10,21 @@
         "username": "asd",
         "email": "asd@asd.com",
         "password": "$2y$10$Zzyzgdt0tgcJY4tcXCwSt.G.HnJsK\/50SEfSdhhFotPve52AZDfrK",
-        "money": 10714,
+        "money": 100,
+        "isAdmin": false
+    },
+    "aaa": {
+        "username": "aaa",
+        "email": "aaa@aaa.com",
+        "password": "$2y$10$YciDKLvPiUZWw6w4RiXd7uY4rY2refxo6dPWK9S39Lwtz.W4tfDmC",
+        "money": 1122,
+        "isAdmin": false
+    },
+    "Bab": {
+        "username": "Bab",
+        "email": "bab@bab.com",
+        "password": "$2y$10$.KFY00HzXo2L3\/LD361Ki.IdsE..E8IOQw0BPdBzo1GuWbICBdd16",
+        "money": 395,
         "isAdmin": false
     }
 }
