@@ -72,7 +72,9 @@ foreach($users as $user) {
                 <div class="flex text-xl font-semibold tracking-tight text-gray-900 sm:text-xl justify-between px-5"><p class="flex">NFT-s</p><a href="addnft.php" class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Add</a></div>
                 
                 <ul role="list">
-                    <?php foreach($cards as $card): ?>
+                    <?php 
+                        $cards_reverse = array_reverse($cards);
+                        foreach ($cards_reverse as $card): ?>
                     <li class="flex justify-between gap-x-6 p-5 border-2 rounded-3xl my-2 items-center">
                         <div class="flex min-w-0 gap-x-4">
                         <a href="card.php?id=<?= $card['name'] ?>">

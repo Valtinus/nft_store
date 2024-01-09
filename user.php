@@ -81,8 +81,9 @@ foreach($users as $user) {
             <p class="text-xl font-semibold tracking-tight text-gray-900 sm:text-xl">Email: <?= htmlspecialchars($_SESSION['email']) ?></p>
             <p class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-3xl pt-20 pb-5">Your NFT-s:
                 <div class="px-8 flex flex-wrap -mb-4 justify-center">
-                    <?php 
-                        foreach ($cards as $card):
+                    <?php
+                        $cards_reverse = array_reverse($cards);
+                        foreach ($cards_reverse as $card):
                             if($card['owner'] == $_SESSION['username']){
                     ?>
                     <a href="card.php?id=<?= $card['name'] ?>">
