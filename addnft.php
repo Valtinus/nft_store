@@ -9,11 +9,14 @@ if (!isset($_SESSION['loggedin']) || !$_SESSION['loggedin'] || !$_SESSION['isAdm
 }
 
 $m = "0";
-if($_SESSION['money'] >= 10000){
-    $n = round($_SESSION['money'] / 1000, 1);
-    $m = "{$n}K";
-} else {
-    $m = $_SESSION['money'];
+foreach($users as $user) {
+    if($user['username'] == $_SESSION['username']) {
+        if($user['money'] >= 10000) {
+            $n = round($user['money'] / 1000, 1);
+        } else {
+            $m = $user['money'];
+        }    
+    }
 }
 
 $errorMessage = '';
@@ -81,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <div class="bg-white">
-        <header class="absolute inset-x-0 top-0 z-50">
+        <header class="fixed inset-x-0 top-0 z-50 shadow-md bg-white">
             <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
                 <a href="index.php"  class="-m-1.5 p-1.5">
