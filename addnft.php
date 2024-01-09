@@ -17,6 +17,7 @@ if($_SESSION['money'] >= 10000){
 }
 
 $errorMessage = '';
+$uploadSuccess = false;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
@@ -54,6 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     ];
     
                     file_put_contents('./data/cards.json', json_encode($cards, JSON_PRETTY_PRINT));
+                    $uploadSuccess = true;
                 } else {
                     echo "An error occured while uploading the file.";
                 }
@@ -198,6 +200,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </form>
         </div>
     </div>
+
+
+    <?php if ($uploadSuccess): ?>
+        <script>
+            alert("NFT added successfully!");
+        </script>
+    <?php endif; ?>
 
 </body>
 </html>
