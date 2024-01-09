@@ -110,6 +110,16 @@ if($_SESSION['money'] >= 10000){
                     <?php endif; ?>
                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><?= $cards[$id]['family']?></span>                
                 </div>
+                <?php if (!$_SESSION['isAdmin'] && $cards[$id]['owner'] == $_SESSION['username']): ?>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Sell</button>
+                    </div>
+                <?php endif; ?>
+                <?php if (!$_SESSION['isAdmin'] && $cards[$id]['owner'] != $_SESSION['username']): ?>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Buy</button>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>
