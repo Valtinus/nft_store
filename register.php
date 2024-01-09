@@ -25,7 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'email' => $email,
             'password' => password_hash($password, PASSWORD_DEFAULT),
             'money' => 1000,
-            'ownednfts' => []
+            'ownednfts' => [],
+            'isAdmin' => false
         ];
 
         file_put_contents('./data/users.json', json_encode($users, JSON_PRETTY_PRINT));
