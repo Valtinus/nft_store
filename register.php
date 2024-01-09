@@ -24,8 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'username' => $username,
             'email' => $email,
             'password' => password_hash($password, PASSWORD_DEFAULT),
-            'money' => 1000,
-            'ownednfts' => [],
+            'money' => 100,
             'isAdmin' => false
         ];
 

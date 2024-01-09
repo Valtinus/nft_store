@@ -288,5 +288,15 @@
         "description": "The best pizza you'll ever have.",
         "image": ".\/images\/mamma_mia.png",
         "owner": "admin"
+    },
+    "The spaghetti": {
+        "id": "29",
+        "name": "The spaghetti",
+        "rarity": "Rare",
+        "family": "Italy",
+        "price": "250",
+        "description": "This plate of pasta changes your life.",
+        "image": ".\/images\/pasta.png",
+        "owner": "admin"
     }
 }
