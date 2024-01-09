@@ -26,11 +26,15 @@ if ($cards[$id]["rarity"] == "Legendary") {
 }
 
 $m = "0";
-if($_SESSION['money'] >= 10000){
-    $n = round($_SESSION['money'] / 1000, 1);
-    $m = "{$n}K";
-} else {
-    $m = $_SESSION['money'];
+foreach($users as $user) {
+    if($user['username'] == $_SESSION['username']) {
+        if($user['money'] >= 10000) {
+            $n = round($user['money'] / 1000, 1);
+        } else {
+            $m = $user['money'];
+        }
+        
+    }
 }
 
 
@@ -49,7 +53,7 @@ if($_SESSION['money'] >= 10000){
     
 
     <div class="bg-white">
-        <header class="absolute inset-x-0 top-0 z-50">
+        <header class="fixed inset-x-0 top-0 z-50 shadow-md bg-white">
             <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
                 <a href="index.php"  class="-m-1.5 p-1.5">
@@ -112,7 +116,7 @@ if($_SESSION['money'] >= 10000){
                 </div>
                 <?php if (!$_SESSION['isAdmin'] && $cards[$id]['owner'] == $_SESSION['username']): ?>
                     <div class="px-6 pt-4 pb-2">
-                        <button class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Sell</button>
+                        <button onclick="return confirmSell('<?= $id ?>')" class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Sell</button>
                     </div>
                 <?php endif; ?>
                 <?php if (!$_SESSION['isAdmin'] && $cards[$id]['owner'] != $_SESSION['username'] && $_SESSION['loggedin']): ?>
@@ -123,6 +127,32 @@ if($_SESSION['money'] >= 10000){
             </div>
         </div>
     </div>
+
+    <script>
+        function confirmSell(cardId) {
+            if (confirm("Are you sure you want to sell this card? You will get 90% of it's value.")) {
+                sellCard(cardId);
+            }
+            return false;
+        }
+
+        function sellCard(cardId) {
+            fetch('sellcard.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'cardId=' + cardId
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data);
+                window.location.reload();
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+
 
 </body>
 </html>
