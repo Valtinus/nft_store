@@ -122,9 +122,14 @@ foreach($users as $user) {
                         <button onclick="return confirmSell('<?= $id ?>')" class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Sell</button>
                     </div>
                 <?php endif; ?>
-                <?php if (!$_SESSION['isAdmin'] && $cards[$id]['owner'] != $_SESSION['username'] && $_SESSION['loggedin']): ?>
+                <?php if (!$_SESSION['isAdmin'] && $cards[$id]['owner'] != $_SESSION['username'] && $_SESSION['loggedin'] && $cards[$id]['owner'] == 'admin'): ?>
                     <div class="px-6 pt-4 pb-2">
-                        <button class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Buy</button>
+                        <button onclick="return confirmBuy('<?= $id ?>')" class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Buy</button>
+                    </div>
+                <?php endif; ?>
+                <?php if (!$_SESSION['isAdmin'] && $cards[$id]['owner'] != $_SESSION['username'] && $_SESSION['loggedin'] && $cards[$id]['owner'] != 'admin'): ?>
+                    <div class="px-6 pt-4 pb-2">
+                        <button class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Request trade</button>
                     </div>
                 <?php endif; ?>
             </div>
@@ -141,6 +146,29 @@ foreach($users as $user) {
 
         function sellCard(cardId) {
             fetch('sellcard.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'cardId=' + cardId
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data);
+                window.location.reload();
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        function confirmBuy(cardId) {
+            if (confirm("Are you sure you want to buy this card?")) {
+                buyCard(cardId);
+            }
+            return false;
+        }
+
+        function buyCard(cardId) {
+            fetch('buycard.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
