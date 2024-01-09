@@ -48,7 +48,7 @@ foreach($users as $user) {
             <div class="lg:flex lg:gap-x-12">
                 <a href="cards.php" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
                 <?php if ($_SESSION['isAdmin']): ?>
-                    <a href="dashboard.php" class="text-sm font-semibold leading-6 text-gray-900">Dashboard</a>
+                    <a href="dashboard.php" class="text-sm font-bold leading-6 text-gray-900">Dashboard</a>
                 <?php endif; ?>
             </div>
             <div class="lg:flex lg:flex-1 lg:justify-end">
