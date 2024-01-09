@@ -58,6 +58,14 @@ if($_SESSION['money'] >= 10000){
 
         <div class="text-center pb-14 px-6 pt-36 lg:px-8">
             <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Currently available NFT-s on the market</h2>
+            <select id="rarityFilter" class="mt-4 border-2 rounded-xl p-1">
+                <option value="all">All</option>
+                <option value="Legendary">Legendary</option>
+                <option value="Epic">Epic</option>
+                <option value="Rare">Rare</option>
+                <option value="Uncommon">Uncommon</option>
+                <option value="Common">Common</option>
+            </select>
         </div>
         <div class="px-8 flex flex-wrap -mb-4 justify-center">
             <?php 
@@ -77,30 +85,43 @@ if($_SESSION['money'] >= 10000){
                     <div class="px-6 pt-4 pb-2">
                         <?php if($card["rarity"] == "Legendary"):
                         ?>
-                            <span class="inline-block bg-yellow-200 rounded-full px-3 py-1 text-sm font-semibold text-yellow-700 mr-2 mb-2"><?= $card['rarity']?></span>
+                            <span class="inline-block bg-yellow-200 rounded-full px-3 py-1 text-sm font-semibold text-yellow-700 mr-2 mb-2 rarity"><?= $card['rarity']?></span>
                         <?php elseif($card["rarity"] == "Epic"):
                         ?>
-                            <span class="inline-block bg-purple-200 rounded-full px-3 py-1 text-sm font-semibold text-purple-700 mr-2 mb-2"><?= $card['rarity']?></span>
+                            <span class="inline-block bg-purple-200 rounded-full px-3 py-1 text-sm font-semibold text-purple-700 mr-2 mb-2 rarity"><?= $card['rarity']?></span>
                         <?php elseif($card["rarity"] == "Rare"):
                         ?>
-                            <span class="inline-block bg-blue-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700 mr-2 mb-2"><?= $card['rarity']?></span>
+                            <span class="inline-block bg-blue-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700 mr-2 mb-2 rarity"><?= $card['rarity']?></span>
                         <?php elseif($card["rarity"] == "Uncommon"):
                         ?>
-                            <span class="inline-block bg-emerald-200 rounded-full px-3 py-1 text-sm font-semibold text-emerald-700 mr-2 mb-2"><?= $card['rarity']?></span>
+                            <span class="inline-block bg-emerald-200 rounded-full px-3 py-1 text-sm font-semibold text-emerald-700 mr-2 mb-2 rarity"><?= $card['rarity']?></span>
                         <?php elseif($card["rarity"] == "Common"):
                         ?>
-                            <span class="inline-block bg-lime-200 rounded-full px-3 py-1 text-sm font-semibold text-lime-700 mr-2 mb-2"><?= $card['rarity']?></span>
+                            <span class="inline-block bg-lime-200 rounded-full px-3 py-1 text-sm font-semibold text-lime-700 mr-2 mb-2 rarity"><?= $card['rarity']?></span>
                         <?php endif; ?>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><?= $card['family']?></span>                
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 rarity"><?= $card['family']?></span>                
                     </div>
                 </div>
             </a>
             <?php endforeach; ?>
         </div>
-
-
-
     </div>
+
+    <script>
+        document.getElementById('rarityFilter').addEventListener('change', function() {
+            var selectedRarity = this.value;
+            var cards = document.querySelectorAll('.card');
+
+            cards.forEach(function(card) {
+                var cardRarity = card.querySelector('.rarity').innerText;
+                if (selectedRarity === 'all' || cardRarity === selectedRarity) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
