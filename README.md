@@ -33,7 +33,7 @@ ELTE Hallgatói Követelményrendszer, IK kari különös rész, 377/A. §: "Az 
 [ ] `2.0 pont` Felhasználó részletek: A felhasználó kártyái mellett megjelenik egy eladás gomb, amivel a felhasználó el tudja adni az adott kártyát, ekkor törlődik a kártyái közül az eladott lap és megkapja a kártya árának 90%-át. Az eladott lap visszakerül az ADMIN paklijába. (Azt hogy az eladás gombot hova helyezed és hogyan valósítod meg rád van bízva)
 [x] `0.5 pont` Admin: Be lehet jelentkezni az admin felhasználó adataival
 [x] `0.5 pont` Admin: Új kártya létrehozása csak Admin felhasználóval érhető el
-[ ] `0.5 pont` Főoldal: Ha be van jelentkezve jelenjen meg egy vásárlás gomb minden kártya alatt
+[x] `0.5 pont` Főoldal: Ha be van jelentkezve jelenjen meg egy vásárlás gomb minden kártya alatt
 [ ] `1.5 pont` Főoldal (Vásárlás): Meg tudja venni a kártyát
 [ ] `0.5 pont` Főoldal (Vásárlás): Csak annyit tud venni amennyi pénze van
 [ ] `0.5 pont` Főoldal (Vásárlás): Legfeljebb 5 kártyája lehet
