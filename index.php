@@ -83,7 +83,7 @@ if($_SESSION['money'] >= 10000){
                 foreach ($cards as $card):
                     if($i > 5) {break;} else {
             ?>
-            <a href="card.php?id=<?= $card['id'] ?>">
+            <a href="card.php?id=<?= $card['name'] ?>">
                 <div class="mx-3 max-w-56 rounded overflow-hidden shadow-lg mb-4 card">
                     <img class="w-full" src="<?= $card['image']?>" alt="<?= $card['name']?>">
                     <div class="px-6 py-4">

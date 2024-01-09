@@ -72,13 +72,13 @@ if($_SESSION['money'] >= 10000){
             <p class="text-xl font-semibold tracking-tight text-gray-900 sm:text-xl">Username: <?= htmlspecialchars($_SESSION['username']) ?></p>
             <p class="text-xl font-semibold tracking-tight text-gray-900 sm:text-xl">Balance: <?= $_SESSION['money'] ?> 💰</p>
             <p class="text-xl font-semibold tracking-tight text-gray-900 sm:text-xl">Email: <?= htmlspecialchars($_SESSION['email']) ?></p>
-            <p class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-3xl pt-20 pb-5">Your cards:
+            <p class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-3xl pt-20 pb-5">Your NFT-s:
                 <div class="px-8 flex flex-wrap -mb-4 justify-center">
                     <?php 
                         foreach ($cards as $card):
                             if($card['owner'] == $_SESSION['username']){
                     ?>
-                    <a href="card.php?id=<?= $card['id'] ?>">
+                    <a href="card.php?id=<?= $card['name'] ?>">
                         <div class="mx-3 max-w-56 rounded overflow-hidden shadow-lg mb-4 card">
                             <img class="w-full" src="<?= $card['image']?>" alt="<?= $card['name']?>">
                             <div class="px-6 py-4">

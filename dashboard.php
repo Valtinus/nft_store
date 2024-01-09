@@ -62,13 +62,15 @@ if($_SESSION['money'] >= 10000){
         </div>
         <div class="px-8 flex flex-row flex-wrap -mb-4 justify-center">
             <div class="w-1/3 mx-10 min-w-min">
-                <div class="flex text-xl font-semibold tracking-tight text-gray-900 sm:text-xl justify-between px-5"><p class="flex">NFT-s</p><a class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Add</a></div>
+                <div class="flex text-xl font-semibold tracking-tight text-gray-900 sm:text-xl justify-between px-5"><p class="flex">NFT-s</p><a href="addnft.php" class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Add</a></div>
                 
                 <ul role="list">
                     <?php foreach($cards as $card): ?>
                     <li class="flex justify-between gap-x-6 p-5 border-2 rounded-3xl my-2 items-center">
                         <div class="flex min-w-0 gap-x-4">
-                        <img class="h-12 w-12 flex-none rounded-2xl bg-gray-50" src="<?= $card['image']?>" alt="">
+                        <a href="card.php?id=<?= $card['name'] ?>">
+                            <img class="h-12 w-12 flex-none rounded-2xl bg-gray-50" src="<?= $card['image']?>" alt="">
+                        </a>
                         <div class="min-w-0 flex-auto">
                             <p class="text-sm font-semibold leading-6 text-gray-900"><?= $card['name'] ?> - ID: <?= $card['id'] ?></p>
                             <p class="mt-1 truncate text-xs leading-5 text-gray-500">Price: <?= $card['price'] ?></p>

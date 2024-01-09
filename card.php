@@ -5,7 +5,7 @@ $users = json_decode(file_get_contents('./data/users.json'), true);
 
 
 if (isset($_GET['id']) && isset($cards[$_GET['id']])) {
-    $id = intval($_GET['id']);
+    $id = $_GET['id'];
 } else {
     echo "Nincs ilyen kártya!";
     exit;
@@ -115,7 +115,7 @@ if($_SESSION['money'] >= 10000){
                         <button class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Sell</button>
                     </div>
                 <?php endif; ?>
-                <?php if (!$_SESSION['isAdmin'] && $cards[$id]['owner'] != $_SESSION['username']): ?>
+                <?php if (!$_SESSION['isAdmin'] && $cards[$id]['owner'] != $_SESSION['username'] && $_SESSION['loggedin']): ?>
                     <div class="px-6 pt-4 pb-2">
                         <button class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Buy</button>
                     </div>
