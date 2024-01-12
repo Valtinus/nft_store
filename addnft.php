@@ -32,8 +32,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $family = $_POST['family'];
     $price = $_POST['price'];
     $description = $_POST['description'];
+    $image = $_POST['image'];
 
-    if (empty($name) || empty($rarity) || empty($family) || empty($price) || empty($description)) {
+    if (empty($name) || empty($rarity) || empty($family) || empty($price) || empty($description) || empty($image)) {
         $errorMessage = 'All fields are required.';
     } elseif (!is_numeric($price) || $price <= 0) {
         $errorMessage = 'Invalid price.';
@@ -130,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <label for="name" class="block text-sm font-medium leading-6 text-gray-900" value="<?= htmlspecialchars($name) ?>">Name</label>
                     <div class="mt-2">
                         <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-violet-600 sm:max-w-md">
-                        <input type="text" name="name" id="name" autocomplete="name" class="block flex-1 border-0 bg-transparent py-1.5 p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Elon Musk" required>
+                        <input novalidate type="text" name="name" id="name" autocomplete="name" class="block flex-1 border-0 bg-transparent py-1.5 p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Elon Musk">
                         </div>
                     </div>
                     </div>
@@ -138,7 +139,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="col-span-full">
                     <label for="description" class="block text-sm font-medium leading-6 text-gray-900" value="<?= htmlspecialchars($description) ?>">Description</label>
                     <div class="mt-2">
-                        <textarea id="description" name="description" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-600 sm:text-sm sm:leading-6 p-2" placeholder="Elon Musk is the head of SpaceX." required></textarea>
+                        <textarea novalidate id="description" name="description" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-600 sm:text-sm sm:leading-6 p-2" placeholder="Elon Musk is the head of SpaceX."></textarea>
                     </div>
                     </div>
 
@@ -146,7 +147,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <label for="family" class="block text-sm font-medium leading-6 text-gray-900" value="<?= htmlspecialchars($family) ?>">Family</label>
                     <div class="mt-2">
                         <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-violet-600 sm:max-w-md">
-                        <input type="text" name="family" id="family" autocomplete="family" class="block flex-1 border-0 bg-transparent py-1.5 p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Alien" required>
+                        <input novalidate type="text" name="family" id="family" autocomplete="family" class="block flex-1 border-0 bg-transparent py-1.5 p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Alien">
                         </div>
                     </div>
                     </div>
@@ -158,7 +159,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="sm:col-span-3">
                     <label for="rarity" class="block text-sm font-medium leading-6 text-gray-900">Rarity</label>
                     <div class="mt-2">
-                        <select id="rarity" name="rarity" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-violet-600 sm:max-w-xs sm:text-sm sm:leading-6" required>
+                        <select novalidate id="rarity" name="rarity" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-violet-600 sm:max-w-xs sm:text-sm sm:leading-6">
                         <option>Common</option>
                         <option>Uncommon</option>
                         <option>Rare</option>
@@ -173,7 +174,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="sm:col-span-3">
                     <label for="price" class="block text-sm font-medium leading-6 text-gray-900" value="<?= htmlspecialchars($price) ?>">Price</label>
                     <div class="mt-2">
-                        <input type="number" name="price" id="price" autocomplete="price" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-600 sm:text-sm sm:leading-6" required>
+                        <input novalidate type="number" name="price" id="price" autocomplete="price" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-600 sm:text-sm sm:leading-6">
                     </div>
                     </div>
 
@@ -187,7 +188,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="mt-4 flex text-sm leading-6 text-gray-600">
                             <label for="image" class="relative cursor-pointer rounded-md bg-white font-semibold text-violet-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-violet-600 focus-within:ring-offset-2 hover:text-violet-500">
                             <span>Upload a file</span>
-                            <input id="image" name="image" type="file" class="sr-only" required>
+                            <input novalidate id="image" name="image" type="file" class="sr-only">
                             </label>
                             <p class="pl-1">or drag and drop</p>
                         </div>

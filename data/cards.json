@@ -187,7 +187,7 @@
         "price": 50,
         "description": "Just a casual giraffe.",
         "image": ".\/images\/gira.png",
-        "owner": "asd"
+        "owner": "admin"
     },
     "Cooler Gira": {
         "id": "19",
@@ -207,7 +207,7 @@
         "price": 110,
         "description": "He is becoming the coolest giraffe ever.",
         "image": ".\/images\/even_cooler_gira.png",
-        "owner": "admin"
+        "owner": "asd"
     },
     "The Coolest Gira": {
         "id": "21",
