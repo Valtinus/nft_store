@@ -128,26 +128,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <form action="addnft.php" method="post" enctype="multipart/form-data">
                 <div class="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6">
                     <div class="sm:col-span-6">
-                    <label for="name" class="block text-sm font-medium leading-6 text-gray-900" value="<?= htmlspecialchars($name) ?>">Name</label>
+                    <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
                     <div class="mt-2">
                         <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-violet-600 sm:max-w-md">
-                        <input novalidate type="text" name="name" id="name" autocomplete="name" class="block flex-1 border-0 bg-transparent py-1.5 p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Elon Musk">
+                        <input novalidate value="<?= htmlspecialchars($name) ?>" type="text" name="name" id="name" autocomplete="name" class="block flex-1 border-0 bg-transparent py-1.5 p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Elon Musk">
                         </div>
                     </div>
                     </div>
 
                     <div class="col-span-full">
-                    <label for="description" class="block text-sm font-medium leading-6 text-gray-900" value="<?= htmlspecialchars($description) ?>">Description</label>
+                    <label for="description" class="block text-sm font-medium leading-6 text-gray-900">Description</label>
                     <div class="mt-2">
-                        <textarea novalidate id="description" name="description" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-600 sm:text-sm sm:leading-6 p-2" placeholder="Elon Musk is the head of SpaceX."></textarea>
+                        <textarea novalidate id="description" name="description" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-600 sm:text-sm sm:leading-6 p-2" placeholder="Elon Musk is the head of SpaceX."><?= htmlspecialchars($description) ?></textarea>
                     </div>
                     </div>
 
                     <div class="sm:col-span-6">
-                    <label for="family" class="block text-sm font-medium leading-6 text-gray-900" value="<?= htmlspecialchars($family) ?>">Family</label>
+                    <label for="family" class="block text-sm font-medium leading-6 text-gray-900">Family</label>
                     <div class="mt-2">
                         <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-violet-600 sm:max-w-md">
-                        <input novalidate type="text" name="family" id="family" autocomplete="family" class="block flex-1 border-0 bg-transparent py-1.5 p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Alien">
+                        <input novalidate value="<?= htmlspecialchars($family) ?>" type="text" name="family" id="family" autocomplete="family" class="block flex-1 border-0 bg-transparent py-1.5 p-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Alien">
                         </div>
                     </div>
                     </div>
@@ -160,11 +160,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <label for="rarity" class="block text-sm font-medium leading-6 text-gray-900">Rarity</label>
                     <div class="mt-2">
                         <select novalidate id="rarity" name="rarity" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-violet-600 sm:max-w-xs sm:text-sm sm:leading-6">
-                        <option>Common</option>
-                        <option>Uncommon</option>
-                        <option>Rare</option>
-                        <option>Epic</option>
-                        <option>Legendary</option>
+                        <option value="Common" <?php if($rarity == "Common"): ?> selected <?php endif; ?>>Common</option>
+                        <option value="Uncommon" <?php if($rarity == "Uncommon"): ?> selected <?php endif; ?>>Uncommon</option>
+                        <option value="Rare" <?php if($rarity == "Rare"): ?> selected <?php endif; ?>>Rare</option>
+                        <option value="Epic" <?php if($rarity == "Epic"): ?> selected <?php endif; ?>>Epic</option>
+                        <option value="Legendary" <?php if($rarity == "Legendary"): ?> selected <?php endif; ?>>Legendary</option>
                         </select>
                     </div>
                     </div>
@@ -172,9 +172,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     
 
                     <div class="sm:col-span-3">
-                    <label for="price" class="block text-sm font-medium leading-6 text-gray-900" value="<?= htmlspecialchars($price) ?>">Price</label>
+                    <label for="price" class="block text-sm font-medium leading-6 text-gray-900">Price</label>
                     <div class="mt-2">
-                        <input novalidate type="number" name="price" id="price" autocomplete="price" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-600 sm:text-sm sm:leading-6">
+                        <input novalidate value="<?= htmlspecialchars($price) ?>" type="number" name="price" id="price" autocomplete="price" class="pl-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-violet-600 sm:text-sm sm:leading-6">
                     </div>
                     </div>
 
