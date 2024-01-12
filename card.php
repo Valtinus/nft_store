@@ -7,7 +7,7 @@ $users = json_decode(file_get_contents('./data/users.json'), true);
 if (isset($_GET['id']) && isset($cards[$_GET['id']])) {
     $id = $_GET['id'];
 } else {
-    echo "Nincs ilyen kártya!";
+    echo "This card does not exist!";
     exit;
 }
 

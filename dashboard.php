@@ -86,7 +86,7 @@ foreach($users as $user) {
                         </div>
                         </div>
                         <div class="hidden shrink-0 sm:flex sm:flex-col">
-                            <a class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Edit</a>
+                            <a href="editcard.php?id=<?= $card['name'] ?>" class="flex w-24 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Edit</a>
                         </div>
                     </li>
                     <?php endforeach; ?>
