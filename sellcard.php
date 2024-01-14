@@ -3,6 +3,11 @@ session_start();
 $cards = json_decode(file_get_contents('./data/cards.json'), true);
 $users = json_decode(file_get_contents('./data/users.json'), true);
 
+if (!isset($_SESSION['loggedin']) || !$_SESSION['loggedin']) {
+    header('Location: index.php');
+    exit;
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cardId'])) {
     $cardId = $_POST['cardId'];
 

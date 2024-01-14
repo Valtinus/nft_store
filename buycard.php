@@ -3,10 +3,14 @@ session_start();
 $cards = json_decode(file_get_contents('./data/cards.json'), true);
 $users = json_decode(file_get_contents('./data/users.json'), true);
 
+if (!isset($_SESSION['loggedin']) || !$_SESSION['loggedin']) {
+    header('Location: index.php');
+    exit;
+}
+
 $cards_num = 0;
 foreach($cards as $card) {
     if($card['owner'] == $_SESSION['username']) {
-        console.log($cards_num);
         $cards_num += 1;
     } 
 }
