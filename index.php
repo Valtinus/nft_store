@@ -84,10 +84,15 @@ foreach($users as $user) {
             <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
             </div>
         </div>
-
-        <div class="text-center pb-14">
+        
+        <div class="text-center pb-6 flex items-center justify-center">
             <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Browse the NFT market</h2>
         </div>
+        <?php if($_SESSION['loggedin']): ?>
+            <div class="text-center pb-12 flex items-center justify-center relative">
+            <button onclick="return confirmBuy()" class="w-32 justify-center rounded-md bg-violet-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600">Buy a random NFT for 200 💰</button>
+        </div>
+        <?php endif; ?>
         <div class="px-8 flex flex-wrap -mb-4 justify-center">
             <?php 
                 shuffle($cards);
@@ -128,5 +133,29 @@ foreach($users as $user) {
             <?php $i++; } endforeach; ?>
         </div>
     </div>
+
+    <script>
+        function confirmBuy() {
+            if (confirm("Are you sure you want to buy a random card?\nYou will be charged 200 💰")) {
+                buyCard();
+            }
+            return false;
+        }
+
+        function buyCard() {
+            fetch('buyrandomcard.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                }
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data);
+                window.location.reload();
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
 </body>
 </html>
