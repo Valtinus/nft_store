@@ -5,9 +5,9 @@ $users = json_decode(file_get_contents('./data/users.json'), true);
 
 
 if (isset($_GET['username']) && isset($users[$_GET['username']])) {
-    $id = intval($_GET['username']);
+    $id = $_GET['username'];
 } else {
-    echo "Nincs ilyen felhasználó!";
+    echo "This user does not exist!";
     exit;
 }
 
@@ -35,7 +35,7 @@ foreach($users as $user) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $users[$id]?></title>
+    <title><?= $users[$id]['username'] ?></title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
