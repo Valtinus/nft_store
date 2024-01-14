@@ -27,7 +27,7 @@
         "price": 240,
         "description": "Your head wont be cold anymore.",
         "image": ".\/images\/simple_hat.png",
-        "owner": "aaa"
+        "owner": "admin"
     },
     "Magic hat": {
         "id": "3",
@@ -47,7 +47,7 @@
         "price": 20,
         "description": "You will feel like Indiana Jones with it.",
         "image": ".\/images\/adventure_hat.png",
-        "owner": "aaa"
+        "owner": "admin"
     },
     "White hat": {
         "id": "5",
@@ -67,7 +67,7 @@
         "price": 100,
         "description": "We all know the more RGB you have the more FPS your game will be.",
         "image": ".\/images\/max_fps.png",
-        "owner": "aaa"
+        "owner": "admin"
     },
     "Ragequit": {
         "id": "7",
@@ -107,7 +107,7 @@
         "price": 70,
         "description": "Too plain",
         "image": ".\/images\/snowwhite.png",
-        "owner": "aaa"
+        "owner": "asd"
     },
     "Office": {
         "id": "11",
@@ -187,7 +187,7 @@
         "price": 50,
         "description": "Just a casual giraffe.",
         "image": ".\/images\/gira.png",
-        "owner": "asd"
+        "owner": "admin"
     },
     "Cooler Gira": {
         "id": "19",
@@ -207,7 +207,7 @@
         "price": 110,
         "description": "He is becoming the coolest giraffe ever.",
         "image": ".\/images\/even_cooler_gira.png",
-        "owner": "asd"
+        "owner": "admin"
     },
     "The Coolest Gira": {
         "id": "21",
@@ -217,7 +217,7 @@
         "price": 160,
         "description": "Can he be even more cooler? I don't think so...",
         "image": ".\/images\/the_coolest_gira.png",
-        "owner": "admin"
+        "owner": "asd"
     },
     "Selfie Gira": {
         "id": "22",
@@ -247,7 +247,7 @@
         "price": 340,
         "description": "Breaks through even the coldest winters.",
         "image": ".\/images\/dry_winter.png",
-        "owner": "aaa"
+        "owner": "admin"
     },
     "Fall of roses": {
         "id": "25",
