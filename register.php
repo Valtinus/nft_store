@@ -19,8 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errorMessage = 'Passwords do not match.';
     } elseif (strlen($password) < 3) {
         $errorMessage = 'Password must be longer than 3 characters.';
-    } elseif (strlen($username) < 3 || strlen($username) > 20) {
-        $errorMessage = 'Username must be longer than 3 characters and shorter than 20.';
+    } elseif (strlen($username) < 2 || strlen($username) > 20) {
+        $errorMessage = 'Username must be longer than 2 characters and shorter than 20.';
     } elseif (array_key_exists($username, $users)) {
         $errorMessage = 'Username already exists.';
     } else {
