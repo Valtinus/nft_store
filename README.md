@@ -40,9 +40,9 @@ ELTE Hallgatói Követelményrendszer, IK kari különös rész, 377/A. §: "Az 
 [x] `1.0 pont` Igényes kialakítás
 
 ### Plusz feladatok (max plusz 5 pont)
-[ ] `0.5 pont` Admin: Kártya módosítása: admin felhasználóval elérhető, még el nem adott kártyák esetén
-[ ] `0.5 pont` Admin: Kártya módosítása: hibakezelés, állapottartás, sikeres mentés
-[ ] `1.0 pont` Főoldal: A főoldal egy gombra kattintva a nem admin felhasználók tudjanak venni egy véletlenszerű kártyát a pénzükből, egy random kártya ára lehet pl.: 50 coin.
+[x] `0.5 pont` Admin: Kártya módosítása: admin felhasználóval elérhető, még el nem adott kártyák esetén
+[x] `0.5 pont` Admin: Kártya módosítása: hibakezelés, állapottartás, sikeres mentés
+[x] `1.0 pont` Főoldal: A főoldal egy gombra kattintva a nem admin felhasználók tudjanak venni egy véletlenszerű kártyát a pénzükből, egy random kártya ára lehet pl.: 50 coin.
 [ ] `2.0 pont` Főoldal: A főoldalon egyszerre csak 9 kártya jelenjen meg, alattuk lehessen navigálni az oldalakon (oldalszámokkal, nyilakkal). Mindig az aktuális oldalszámnak megfelelő kártyák jelenjenek meg, minden oldalon a következő 9 kártya. A megoldáshoz használj AJAX-ot/fetch-et.
 [ ] `1.0 pont` Csere 1. lépés: A főoldalon azoknál a kártyáknál, amely nem az adminnál és nálunk van jelenjen meg egy csere gomb, amire kattintva önhatalmúlag cserélhesse el ezen kártyára egy tetszőleges kártyáját a felhasználó. 
 [ ] `1.0 pont` Csere 2. lépés: A csere ne azonnali és önhatalmú legyen, hanem a másik fél kapjon róla értesítést, és fogadhassa vagy utasíthassa el.
