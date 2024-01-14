@@ -187,7 +187,7 @@
         "price": 50,
         "description": "Just a casual giraffe.",
         "image": ".\/images\/gira.png",
-        "owner": "admin"
+        "owner": "asd"
     },
     "Cooler Gira": {
         "id": "19",
@@ -304,7 +304,7 @@
         "name": "Tiramisu",
         "rarity": "Legendary",
         "family": "Italy",
-        "price": "700",
+        "price": "500",
         "description": "Italian perfection.",
         "image": ".\/images\/tiramisu.png",
         "owner": "admin"
