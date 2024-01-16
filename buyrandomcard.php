@@ -26,6 +26,8 @@ $availableCards = array_filter($cards, 'availableCard');
 if ($_SESSION['username'] != 'admin') {
     if ($cards_num >= 5) {
         echo "You can't buy more NFT-s!";
+    } elseif ($users[$_SESSION['username']]['money'] < 200) {
+        echo "You don't have enough money to buy a random NFT!";
     } elseif (count($availableCards) > 0) {
         $randomCard = array_rand($availableCards, 1);
 
